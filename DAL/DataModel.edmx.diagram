@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dbaab7aa2708420fa42deaa481cafc3b" Name="Diagram1">
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.AspNetRoles" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.AspNetUsers" Width="1.5" PointX="7.5" PointY="19.875" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.AuditReport" Width="1.5" PointX="7.5" PointY="11.5" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.Branch" Width="1.5" PointX="8.25" PointY="16.125" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.Customer" Width="1.5" PointX="8.25" PointY="2" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.Department" Width="1.5" PointX="0.75" PointY="5.875" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.Designation" Width="1.5" PointX="3" PointY="9" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.Employee" Width="1.5" PointX="5.25" PointY="4.125" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.Group" Width="1.5" PointX="3" PointY="2.625" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.Roles" Width="1.5" PointX="7.5" PointY="5.75" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.Section" Width="1.5" PointX="3" PointY="5.625" />
+        <EntityTypeShape EntityType="AuditAndHybridAuthModel.Transaction" Width="1.5" PointX="10.5" PointY="5.125" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_AuditReport_Employee" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_Customer_Branch" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_Transaction_Branch" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_Transaction_Customer" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_Section_Department" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_Employee_Designation" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_Employee_Employee" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_Employee_Group" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_Employee_Section" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.FK_Transaction_Employee" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.AspNetUserRoles" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.RolePermission" />
+        <AssociationConnector Association="AuditAndHybridAuthModel.UserRole" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
